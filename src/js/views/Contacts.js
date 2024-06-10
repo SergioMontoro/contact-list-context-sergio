@@ -15,10 +15,8 @@ export const Contacts = () => {
 	const { store, actions } = useContext(Context);
 
 	useEffect(() => {
-		// const listContacts =
 		actions.getAllAgenda();
 	}, []);
-	console.log(store.listContacts);
 
 	return (
 		<div className="container">
@@ -33,7 +31,7 @@ export const Contacts = () => {
 						{store.listContacts.map(item => (
 							<ContactCard
 								key={item.id}
-								name={item.full_name}
+								name={item.name}
 								address={item.address}
 								phone={item.phone}
 								email={item.email}

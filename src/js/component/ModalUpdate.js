@@ -21,7 +21,6 @@ export const ModalUpdate = props => {
 		const data = {
 			name: name,
 			email: email,
-			agenda_slug: "velazcoCarlos",
 			phone: phone,
 			address: address
 		};
@@ -90,7 +89,6 @@ export const ModalUpdate = props => {
 								onChange={e => setAddress(e.target.value)}
 							/>
 						</div>
-						{/* </form> */}
 					</div>
 					<div className="modal-footer">
 						<button
@@ -98,7 +96,7 @@ export const ModalUpdate = props => {
 								props.onClose();
 							}}
 							type="button"
-							className="btn btn-primary">
+							className="btn btn-danger">
 							Oh no!
 						</button>
 						<button
@@ -107,9 +105,9 @@ export const ModalUpdate = props => {
 								props.onClose();
 							}}
 							type="button"
-							className="btn btn-secondary"
+							className="btn btn-primary"
 							data-dismiss="modal">
-							Do it!
+							Change it!
 						</button>
 					</div>
 				</div>

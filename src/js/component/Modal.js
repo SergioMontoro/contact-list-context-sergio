@@ -39,8 +39,8 @@ export const Modal = props => {
 								props.onClose();
 							}}
 							type="button"
-							className="btn btn-primary">
-							Oh no!
+							className="btn btn-danger">
+							Let me give it a second thougth...
 						</button>
 						<button
 							onClick={() => {
@@ -48,7 +48,7 @@ export const Modal = props => {
 								props.onClose();
 							}}
 							type="button"
-							className="btn btn-secondary"
+							className="btn btn-primary"
 							data-dismiss="modal">
 							Do it!
 						</button>

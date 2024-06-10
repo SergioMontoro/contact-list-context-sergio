@@ -17,7 +17,6 @@ export const AddContact = () => {
 		const data = {
 			name: name,
 			email: email,
-			agenda_slug: "velazcoCarlos",
 			phone: phone,
 			address: address
 		};
